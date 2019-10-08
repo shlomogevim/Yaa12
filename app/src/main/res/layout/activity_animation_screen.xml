@@ -5,7 +5,9 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AnimationScreen">
+    tools:context=".AnimationScreen"
+    android:keepScreenOn="true"
+    >
 
     <TextView
         android:id="@+id/title_situation"
@@ -17,6 +19,18 @@
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/counter_situation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:elevation="1dp"
+        android:text="counter=0"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_situation" />
 
     <com.example.yaa12.Smilly
         android:id="@+id/goddy"

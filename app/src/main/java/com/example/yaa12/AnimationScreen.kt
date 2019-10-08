@@ -17,6 +17,7 @@ class AnimationScreen : AppCompatActivity() {
     lateinit var manList: ArrayList<String>
     var manMode = true
     var sevev = 0
+    var counterSituation=0
 
     // var animationInAction = AnimationAction(mainLayout)
 
@@ -55,7 +56,7 @@ class AnimationScreen : AppCompatActivity() {
       //  manMode = false
        // sevev = 6
 
-
+        counterSituation++
         update_title_situation()
 
         var speaking = ""
@@ -72,10 +73,12 @@ class AnimationScreen : AppCompatActivity() {
             sevev++
 
         }
+
     }
 
     fun update_title_situation() {
         title_situation.text = "madMode=$manMode round=$sevev"
+        counter_situation.text="counter=$counterSituation"
     }
 
     private fun operateGoddy(st: String) {
@@ -84,19 +87,19 @@ class AnimationScreen : AppCompatActivity() {
         var animationInAction = AnimationAction(mainLayout)
         initGod(size)
         when (size) {
-            1 -> {
+            /*1 -> {
                 if (sevev == 6) {
-                    animationInAction.godTranslaion11(arr)
+                    animationInAction.godTranslaion11(arr,counterSituation)
                 } else {
-                    animationInAction.godTranslaion10(arr)
+                    animationInAction.godTranslaion10(arr,counterSituation)
                 }
-            }
-
-            2 -> animationInAction.godTranslation20(arr)
-            3 -> animationInAction.godTranslaion30(arr)
-            4 -> animationInAction.godTranslaion40(arr)
-            5 -> animationInAction.godTranslaion50(arr)
-            6 -> animationInAction.godTranslaion60(arr)
+            }*/
+            1 ->animationInAction.godTranslaion11(arr,counterSituation)
+            2 -> animationInAction.godTranslation20(arr,counterSituation)
+            3 -> animationInAction.godTranslaion30(arr,counterSituation)
+            4 -> animationInAction.godTranslaion40(arr,counterSituation)
+            5 -> animationInAction.godTranslaion50(arr,counterSituation)
+            6 -> animationInAction.godTranslaion60(arr,counterSituation)
         }
     }
 
@@ -150,11 +153,11 @@ class AnimationScreen : AppCompatActivity() {
         var animationInAction = AnimationAction(mainLayout)
         initMan(size)
         when (size) {
-            1 -> animationInAction.manTranslation10(arr)
-            2 -> animationInAction.manTranslation20(arr)
-            3 -> animationInAction.manTranslaion30(arr)
-            4 -> animationInAction.manTranslaion40(arr)
-            5 -> animationInAction.manTranslaion50(arr)
+            1 -> animationInAction.manTranslation10(arr,counterSituation)
+            2 -> animationInAction.manTranslation20(arr,counterSituation)
+            3 -> animationInAction.manTranslaion30(arr,counterSituation)
+            4 -> animationInAction.manTranslaion40(arr,counterSituation)
+            5 -> animationInAction.manTranslaion50(arr,counterSituation)
         }
     }
 
