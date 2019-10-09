@@ -29,7 +29,7 @@ class AnimationScreen : AppCompatActivity() {
         setContentView(R.layout.activity_animation_screen)
         manList = intent.getStringArrayListExtra(MANNL)
         godList = intent.getStringArrayListExtra(GODDL)
-        animationInAction=AnimationAction(mainLayout)
+        animationInAction=AnimationAction(this,mainLayout)
         generalOperation()
         goddy.setOnClickListener {
             if (!manMode) {

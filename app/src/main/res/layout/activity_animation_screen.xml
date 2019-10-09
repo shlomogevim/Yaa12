@@ -66,6 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:typeface="normal"
             tools:text="godSpeaking1" />
 
     </LinearLayout>
@@ -196,6 +197,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:typeface="normal"
             tools:text="Man Speaking3" />
 
         <TextView
@@ -204,6 +206,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:typeface="normal"
             tools:text="Man Speaking2" />
 
         <TextView
@@ -212,6 +215,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:typeface="normal"
             tools:text="Man Speaking1" />
 
     </LinearLayout>
